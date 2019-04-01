@@ -9,15 +9,14 @@ set(FIELDLIB_SOURCES
   src/fields.c
   src/fields.h
   src/real.h
- # src/vectorFieldCreator.c
 )
 
 
 
 
-# adds a library target called nastlib to be built from the source files
+# adds a library target called fieldlib to be built from the source files
 add_library(fieldlib ${FIELDLIB_SOURCES})
-# Specifies the include directory to use when compiling our target nastlib.
+# Specifies the include directory to use when compiling our target fieldlib.
 target_include_directories(fieldlib PUBLIC src)
 
 # MSVC is set to true when the compiler is some version of Microsoft Visual C++ or another compiler simulating Visual C++.
@@ -35,12 +34,12 @@ endif(NOT MSVC)
 if(MSVC)
   target_compile_options(fieldlib PRIVATE /W4 /WX)
 else(MSVC)
-  target_compile_options(fieldlib PRIVATE -Wall -Wextra -pedantic -Werror)
+  target_compile_options(fieldlib PRIVATE -Wall -Wextra -pedantic)
 endif(MSVC)
 
-# Adds an executable target called nast to be built from the source/main.c
+# Adds an executable target called blatt1 to be built from the source/main.c
 add_executable(blatt1 src/blatt1.c)
-# links our executable with the source library nastlib
+# links our executable with the source library fieldlib
 target_link_libraries(blatt1 fieldlib)
 # Add a subdirectory to the build (where another CMakeLists.txt is located)
 add_subdirectory(tests)
