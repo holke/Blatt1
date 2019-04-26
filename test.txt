@@ -11,7 +11,7 @@ was aendern // ein kommentar
 
 
 
-// mein schlauer Kommentar 0
+// mein schlauer Kommentar 0 und noch ne kluge anmerkung
 irgendein neues feature
 irgendein neues feature
 irgendein neues feature
