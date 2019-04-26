@@ -17,7 +17,7 @@ irgendein neues feature
 irgendein neues feature
 irgendein neues feature
 irgendein neues feature
-// Mein schlauer kommentar1
+// Mein schlauer kommentar1 und ein kluger Kommentar von B
 irgendein neues feature
 irgendein neues feature
 irgendein neues feature
